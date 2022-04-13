@@ -37,7 +37,8 @@ app.layout = html.Div(children=[
                 dcc.Input(id='SingleFam', value=0, type='number', min=0, max=1, step=1),
                 html.Div('Large Neighborhood:'),
                 dcc.Input(id='LargeNeighborhood', value=0, type='number', min=0, max=1, step=1),
-
+                html.Div('GarageCars:'),
+                dcc.Input(id='GarageCars', value=0, type='number', min=0, max=3, step=1),
             ], className='four columns'),
             html.Div([
                 html.Button(children='Submit', id='submit-val', n_clicks=0,
